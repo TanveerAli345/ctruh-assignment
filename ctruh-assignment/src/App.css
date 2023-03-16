@@ -7,4 +7,18 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-}  
+}
+
+/* CANVAS */
+
+.canvas-wrapper {
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    resize: both;
+  }
+  
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }
