@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import Canvas from './components/Canvas'
 import Tools from './components/Tools'
@@ -19,14 +19,28 @@ function App() {
 
   const handleNumberChange = (e) => {
     setNumber(e.target.value)
-    console.log(number)
   }
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext("2d");
+    canvas.width = canvas.getBoundingClientRect().width;
+    canvas.height = canvas.getBoundingClientRect().height;
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+
+    context.font = "bold 4rem Poppins";
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText(number, centerX, centerY);
+  }, [number, color])
   
   return (
     <div className="main" style={{background: colorPalette}}>
       <Tools
         handleColorChange = {handleColorChange}
         handleColorPaletteChange = {handleColorPaletteChange}
+        number = {number}
         handleNumberChange = {handleNumberChange}
       />
       <Canvas

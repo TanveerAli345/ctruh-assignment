@@ -5,6 +5,7 @@ export default function Canvas({ color, canvasRef }) {
         <div className="canvas-wrapper">
             <canvas
                 id="canvas"
+                ref={canvasRef}
                 style={{
                     background: color,
                     border: "2px solid #ccc",
