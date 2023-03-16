@@ -32,6 +32,7 @@ function App() {
     context.font = "bold 4rem Poppins";
     context.textAlign = "center";
     context.textBaseline = "middle";
+    context.fillStyle = color === "#ffffff" ? "#000000" : "#ffffff";
     context.fillText(number, centerX, centerY);
   }, [number, color])
   
