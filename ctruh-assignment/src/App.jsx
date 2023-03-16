@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import Canvas from './components/Canvas'
 import Tools from './components/Tools'
+import About from './components/About'
 
 function App() {
   const [color, setColor] = useState("#ffffff")
@@ -48,6 +49,7 @@ function App() {
         canvasRef = {canvasRef}
         color = {color}
       />
+      <About />
     </div>
   )
 }
