@@ -27,14 +27,14 @@ function App() {
     const context = canvas.getContext("2d");
     canvas.width = canvas.getBoundingClientRect().width;
     canvas.height = canvas.getBoundingClientRect().height;
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+    const midX = canvas.width / 2;
+    const midY = canvas.height / 2;
 
     context.font = "bold 4rem Poppins";
     context.textAlign = "center";
     context.textBaseline = "middle";
     context.fillStyle = color === "#ffffff" ? "#000000" : "#ffffff";
-    context.fillText(number, centerX, centerY);
+    context.fillText(number, midX, midY);
   }, [number, color])
   
   return (
