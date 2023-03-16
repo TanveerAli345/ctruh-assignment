@@ -14,6 +14,8 @@ export default function Tools({ handleColorChange, handleColorPaletteChange }) {
                 </option>
                 ))}
             </select>
+
+            <input type="number" />
         </div>
     )
 }
