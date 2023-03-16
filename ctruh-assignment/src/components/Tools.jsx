@@ -3,10 +3,13 @@ import colorPalette from '../data/colorPalettes.json'
 
 export default function Tools({ handleColorChange, handleColorPaletteChange }) {
     return(
-        <div>
-            <input type="color" onChange={handleColorChange} />
+        <div className="tools">
+            <div className="canvas-tools">
+                <input id="ip-color" type="color" onChange={handleColorChange} />
+                <input id="ip-number" type="number" />
+            </div>
             
-            <select onChange={handleColorPaletteChange}>
+            <select id="ip-select" onChange={handleColorPaletteChange}>
                 <option value=""> Choose the background color </option>
                 {colorPalette.map((item, index) => (
                 <option key={index} value={item[1]}>
@@ -14,8 +17,6 @@ export default function Tools({ handleColorChange, handleColorPaletteChange }) {
                 </option>
                 ))}
             </select>
-
-            <input type="number" />
         </div>
     )
 }
