@@ -1,6 +1,8 @@
 # ctruh-assignment
 
-This is a responsive web application built with React framework. It features a canvas element and a color picker which can enable the change of color of the canvas. The application also includes a 2D element overlayed on the canvas which is a 2 digit number that can be dynamically changed. Additionally, there is a dropdown which has a specific color palette to the selected background. The canvas can be resized in both x and y axis. The project is built with modern web technologies and is easy to set up and run. 
+This is a responsive web application built with React framework. It features a canvas element and a color picker which can enable the change of color of the canvas. The application also includes a 2D element overlayed on the canvas which is a 2 digit number that can be dynamically changed. Additionally, there is a dropdown which has a specific color palette to the selected background. The canvas can be resized in both x and y axis. The project is built with modern web technologies and is easy to set up and run.
+
+Deployed link: https://ctruh-tanveer.netlify.app/
 
 ## Getting Started
 
